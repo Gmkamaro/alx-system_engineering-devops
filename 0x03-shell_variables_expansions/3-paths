@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | egrep ":" | wc -w
+echo $PATH | egrep ":" | wc -m
