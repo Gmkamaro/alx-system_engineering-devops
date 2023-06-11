@@ -2,11 +2,12 @@
 
 counter=1
 
-while [ "$counter" -lt 11 ]
+while [ "$counter" -lt 11 ];do
 
-    if ["$counter" -eq 9 ]
-	do echo "Hi"
+    if [ "$counter" -eq 9 ];then
+	echo "Hi"
     else
-	do echo "Best School"
+        echo "Best School"
     fi
+    ((counter++))
 done
