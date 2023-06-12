@@ -1,10 +1,14 @@
 #!/usr/bin/env bash
-# Uses nested loops to display clock numbers
-hour=-1
-while [ $((++hour)) -le 12 ]; do
-	echo Hour: $hour
-	minute=0
-	while [ $((++minute)) -le 59 ]; do
-		echo $minute
-	done
+#bashable clock
+
+Hour=0
+minutes=1
+while [ "$Hour" -lt 13 ]; do
+      echo "Hour: $Hour" 
+      while [ "$minutes" -lt 60 ]; do
+      	    echo "$minutes"
+	    ((minutes++))
+      done
+      minutes=1
+      ((Hour++))
 done
