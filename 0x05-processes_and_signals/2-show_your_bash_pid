@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
-# Displays lines containing the bash word, thus allowing me to easily get the PID of My Bash process
+#slm
 # shellcheck disable=SC2009
-ps auxf | grep 'bash'
+
+# Get the PID of the Bash process
+pid=$(ps aux | grep bash | grep -v grep | awk '{print $2}')
+
+# Display the PID
+echo "PID of the Bash process: $pid"
