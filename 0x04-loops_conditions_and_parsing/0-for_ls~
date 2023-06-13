@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#display the directory content
+
+for name in $ls
+do
+	echo "-* $name "
