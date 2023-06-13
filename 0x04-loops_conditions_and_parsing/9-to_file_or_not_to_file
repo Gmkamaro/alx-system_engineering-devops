@@ -17,5 +17,3 @@ if [ -e "$school" ]; then
 else
 	echo "school file does not exist"
 fi
-	
-     
