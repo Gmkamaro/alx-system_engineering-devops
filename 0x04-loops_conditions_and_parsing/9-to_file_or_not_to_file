@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 #slm
 
-school="school"
+file="school"
 
-if [ -e "$school" ]; then
+if [ -e "$file" ]; then
    echo "school file exists"
    
-   if [ -s "$school" ]; then
+   if [ -s "$file" ]; then
       echo "school file is not empty"
    else
       echo "file is empty"
    fi
    
-   if [ -f "$school" ]; then
+   if [ -f "$file" ]; then
       echo "school file is a regular file"
    else
       :
