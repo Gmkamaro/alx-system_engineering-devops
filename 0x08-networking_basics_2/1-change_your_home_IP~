@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#switch ip addresses
+
+cp /etc/hosts ~/hosts.new
+echo "127.0.0.2\tlocalhost" >> ~/hosts.new
+echo "8.8.8.8\tfacebook.com" >> ~/hosts.new
+mv ~/hosts.new /etc/hosts
