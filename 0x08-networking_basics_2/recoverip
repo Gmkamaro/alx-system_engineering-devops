@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#slm
+
+cp /etc/hosts ~/hosts.newer
+sed -i 's/.*localhost/127.0.0.1\tlocalhost/g' ~/hosts.newer
+sed -i 's/.*facebook.com//g' ~/hosts.newer
+sed -i '1 a 69.63.176.13\tfacebook.com' ~/hosts.newer
+cp -f ~/hosts.newer /etc/hosts
